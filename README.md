@@ -23,6 +23,8 @@ heroku git:clone --app YOURAPPNAME
 - Create an Admin user by using
 
 ```sh
+heroku run bash --app YOURAPPNAME
+
 # Initialize the database
 superset db upgrade
 
