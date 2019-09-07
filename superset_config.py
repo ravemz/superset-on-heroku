@@ -26,6 +26,8 @@ WTF_CSRF_ENABLED = CSRF_ENABLED = True
 
 # use inserted X-Forwarded-For/X-Forwarded-Proto headers
 ENABLE_PROXY_FIX = True
+PROXY_FIX_CONFIG = {"x_for": 1, "x_proto": 1, "x_host": 1, "x_port": 1, "x_prefix": 1}
+
 SQLLAB_ASYNC_TIME_LIMIT_SEC = 300
 SQLLAB_TIMEOUT = 300
 SUPERSET_WEBSERVER_TIMEOUT = 300
